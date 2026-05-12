@@ -66,4 +66,13 @@ class Home extends BaseController
         ];
         return view('v_template', $data);
     }
+
+    public function geojson()
+    {
+        $data = [
+            'judul' => 'GeoJSON',
+            'page' => 'v_geojson'
+        ];
+        return view('v_template', $data);
+    }
 }

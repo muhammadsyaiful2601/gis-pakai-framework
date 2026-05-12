@@ -12,6 +12,9 @@
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="<?= base_url('sbadmin') ?>/js/scripts.js"></script>
 </head>
 
 <body>
@@ -89,6 +92,13 @@
                             Polyline
                         </a>
 
+                        <a class="nav-link" href="<?= base_url('Home/geojson') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-solid fa-gears"></i>
+                            </div>
+                            GeoJSON
+                        </a>
+
                         <a class="nav-link" href="<?= base_url('Home/polygon') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-draw-polygon"></i>
@@ -134,8 +144,10 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <script src="<?= base_url('sbadmin') ?>/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+        < /scrip> <
+        script src = "<?= base_url('sbadmin') ?>/js/scripts.js" >
+    </script>
 </body>
 
 </html>
