@@ -10,6 +10,8 @@
     <title><?= $judul ?></title>
     <link href="<?= base_url('sbadmin') ?>/css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -46,33 +48,52 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="<?= base_url('home') ?>">
+                        <a class="nav-link" href="<?= base_url('Home') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fas fa-tachometer-alt"></i>
                             </div>
                             Dashboard
                         </a>
                         <!-- //view map -->
-                        <div class="sb-sidenav-menu-heading">Dengan Database</div>
-                        <a class="nav-link" href="index.html">
+                        <div class="sb-sidenav-menu-heading"> Database</div>
+                        <a class="nav-link" href="<?= base_url('Home/view_map') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-eye"></i>
                             </div>
                             View Map
                         </a>
                         <!-- base map -->
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="<?= base_url('Home/base_map') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-map"></i>
                             </div>
                             Base Map
                         </a>
                         <!-- //marker -->
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="<?= base_url('Home/marker') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             Marker
+                        </a>
+                        <a class="nav-link" href="<?= base_url('Home/circle') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-regular fa-circle"></i>
+                            </div>
+                            Circle
+                        </a>
+                        <a class="nav-link" href="<?= base_url('Home/polyline') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-solid fa-grip-lines"></i>
+                            </div>
+                            Polyline
+                        </a>
+
+                        <a class="nav-link" href="<?= base_url('Home/polygon') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-solid fa-draw-polygon"></i>
+                            </div>
+                            Polygon
                         </a>
                         <div class="sb-sidenav-menu-heading">Addons</div>
                         <a class="nav-link" href="charts.html">
@@ -95,8 +116,9 @@
             <main>
                 <div class="container-fluid px-4">
                     <h1 class="mt-4"><?= $judul ?></h1>
-                    <p1>ini dashboard</p1>
-                </div>
+                    <?php if ($page) {
+                        echo view($page);
+                    } ?>
             </main>
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
