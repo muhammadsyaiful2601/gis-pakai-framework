@@ -61,7 +61,7 @@
     var circle = L.circle([-0.47355939487371107, 100.76143565289122], {
         radius: 200,
         color: 'red',
-        fillColor: '#f03',
+        fillColor: 'rgb(0, 255, 153)',
         fillOpacity: 0.5,
     }).addTo(map);
 
