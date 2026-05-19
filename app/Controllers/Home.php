@@ -75,4 +75,22 @@ class Home extends BaseController
         ];
         return view('v_template', $data);
     }
+
+    public function getCoordinat()
+    {
+        $data = [
+            'judul' => 'Get Coordinat',
+            'page' => 'v_getcoordinat'
+        ];
+        return view('v_template', $data);
+    }
+
+    public function getCoordinat2()
+    {
+        $data = [
+            'judul' => 'Get Coordinat 2',
+            'page' => 'v_getcoordinat2'
+        ];
+        return view('v_template', $data);
+    }
 }

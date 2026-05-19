@@ -94,7 +94,7 @@
 
                         <a class="nav-link" href="<?= base_url('Home/geojson') ?>">
                             <div class="sb-nav-link-icon">
-                                <i class="fa-solid fa-gears"></i>
+                                <i class="fa-solid fa-globe"></i>
                             </div>
                             GeoJSON
                         </a>
@@ -105,6 +105,21 @@
                             </div>
                             Polygon
                         </a>
+
+                        <a class="nav-link" href="<?= base_url('Home/getCoordinat') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                            Get Coordinat
+                        </a>
+
+                        <a class="nav-link" href="<?= base_url('Home/getCoordinat2') ?>">
+                            <div class="sb-nav-link-icon">
+                                <i class="fa-solid fa-location-crosshairs"></i>
+                            </div>
+                            Get Coordinat dengan kordinat
+                        </a>
+
                         <div class="sb-sidenav-menu-heading">Addons</div>
                         <a class="nav-link" href="charts.html">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
