@@ -1,0 +1,15 @@
+CRITICAL - 2026-05-21 05:47:47 --> App\Models\ModelLokasi::__construct() has #[\Override] attribute, but no matching parent method exists
+in APPPATH\Models\ModelLokasi.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-05-21 05:49:44 --> App\Models\ModelLokasi::__construct() has #[\Override] attribute, but no matching parent method exists
+in APPPATH\Models\ModelLokasi.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-05-21 05:49:47 --> App\Models\ModelLokasi::__construct() has #[\Override] attribute, but no matching parent method exists
+in APPPATH\Models\ModelLokasi.php on line 18.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2026-05-21 05:49:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-21 05:56:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-21 06:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-21 06:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-21 06:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-05-21 06:06:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

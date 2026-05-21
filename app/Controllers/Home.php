@@ -7,8 +7,17 @@ class Home extends BaseController
     public function index()
     {
         $data = [
-            'judul' => 'Dashboard',
-            'page' => 'v_dashboard',
+            'judul' => 'dashboard',
+            'page'  => 'v_dashboard',
+        ];
+        return view('v_template', $data);
+    }
+
+    public function base_map()
+    {
+        $data = [
+            'judul' => 'Base Maps',
+            'page'  => 'v_basemap',
         ];
         return view('v_template', $data);
     }
@@ -17,16 +26,7 @@ class Home extends BaseController
     {
         $data = [
             'judul' => 'View Map',
-            'page' => 'v_viewmap'
-        ];
-        return view('v_template', $data);
-    }
-
-    public function base_map()
-    {
-        $data = [
-            'judul' => 'Base Map',
-            'page' => 'v_basemap'
+            'page'  => 'v_viewmap',
         ];
         return view('v_template', $data);
     }
@@ -35,7 +35,7 @@ class Home extends BaseController
     {
         $data = [
             'judul' => 'Marker',
-            'page' => 'v_marker'
+            'page'  => 'v_marker',
         ];
         return view('v_template', $data);
     }
@@ -43,8 +43,8 @@ class Home extends BaseController
     public function circle()
     {
         $data = [
-            'judul' => 'Circle',
-            'page' => 'v_circle'
+            'judul' => 'circle',
+            'page'  => 'v_circle',
         ];
         return view('v_template', $data);
     }
@@ -52,8 +52,8 @@ class Home extends BaseController
     public function polyline()
     {
         $data = [
-            'judul' => 'Polyline',
-            'page' => 'v_polyline'
+            'judul' => 'polyline',
+            'page'  => 'v_polyline',
         ];
         return view('v_template', $data);
     }
@@ -61,8 +61,8 @@ class Home extends BaseController
     public function polygon()
     {
         $data = [
-            'judul' => 'Polygon',
-            'page' => 'v_polygon'
+            'judul' => 'polygon',
+            'page'  => 'v_polygon',
         ];
         return view('v_template', $data);
     }
@@ -70,26 +70,35 @@ class Home extends BaseController
     public function geojson()
     {
         $data = [
-            'judul' => 'GeoJSON',
-            'page' => 'v_geojson'
+            'judul' => 'geojson',
+            'page'  => 'v_geojson',
         ];
         return view('v_template', $data);
     }
 
-    public function getCoordinat()
+    public function geojson2()
     {
         $data = [
-            'judul' => 'Get Coordinat',
-            'page' => 'v_getcoordinat'
+            'judul' => 'geojson2',
+            'page'  => 'v_geojson2',
         ];
         return view('v_template', $data);
     }
 
-    public function getCoordinat2()
+    public function getcoordinat()
     {
         $data = [
-            'judul' => 'Get Coordinat 2',
-            'page' => 'v_getcoordinat2'
+            'judul' => 'getcoordinat',
+            'page'  => 'v_getcoordinat',
+        ];
+        return view('v_template', $data);
+    }
+
+    public function getcoordinat2()
+    {
+        $data = [
+            'judul' => 'getcoordinat2',
+            'page'  => 'v_getcoordinat2',
         ];
         return view('v_template', $data);
     }

@@ -10,4 +10,10 @@ class ModelLokasi extends Model
     {
         $this->db->table('tbl_lokasi')->insert($data);
     }
+
+    public function allData()
+    {
+        return $this->db->table('tbl_lokasi')
+            ->get()->getResultArray();
+    }
 }

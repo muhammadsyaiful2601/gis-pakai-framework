@@ -19,18 +19,14 @@
 
 <body>
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
-        <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
                 <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                 <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
             </div>
         </form>
-        <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
@@ -57,7 +53,6 @@
                             </div>
                             Dashboard
                         </a>
-                        <!-- //view map -->
                         <div class="sb-sidenav-menu-heading"> Database</div>
                         <a class="nav-link" href="<?= base_url('Home/view_map') ?>">
                             <div class="sb-nav-link-icon">
@@ -65,14 +60,12 @@
                             </div>
                             View Map
                         </a>
-                        <!-- base map -->
                         <a class="nav-link" href="<?= base_url('Home/base_map') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-map"></i>
                             </div>
                             Base Map
                         </a>
-                        <!-- //marker -->
                         <a class="nav-link" href="<?= base_url('Home/marker') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-location-dot"></i>
@@ -106,14 +99,14 @@
                             Polygon
                         </a>
 
-                        <a class="nav-link" href="<?= base_url('Home/getCoordinat') ?>">
+                        <a class="nav-link" href="<?= base_url('Home/getcoordinat') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-location-crosshairs"></i>
                             </div>
                             Get Coordinat
                         </a>
 
-                        <a class="nav-link" href="<?= base_url('Home/getCoordinat2') ?>">
+                        <a class="nav-link" href="<?= base_url('Home/getcoordinat2') ?>">
                             <div class="sb-nav-link-icon">
                                 <i class="fa-solid fa-location-crosshairs"></i>
                             </div>
@@ -129,8 +122,8 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="<?= base_url('lokasi/inputLokasi') ?>">Input Lokasi</a>
-                                <a class="nav-link" href="layout-static.html">Data Lokasi</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Pemetaan Lokasi</a>
+                                <a class="nav-link" href="<?= base_url('lokasi/dataLokasi') ?>">Data Lokasi</a>
+                                <a class="nav-link" href="<?= base_url('lokasi/pemetaanLokasi') ?>">Pemetaan Lokasi</a>
                             </nav>
                         </div>
                         <a class="nav-link" href="tables.html">
@@ -152,6 +145,7 @@
                     <?php if ($page) {
                         echo view($page);
                     } ?>
+                </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
@@ -167,10 +161,6 @@
             </footer>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
-        < /scrip> <
-        script src = "<?= base_url('sbadmin') ?>/js/scripts.js" >
-    </script>
 </body>
 
 </html>
