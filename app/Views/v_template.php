@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+    <script src="<?= base_url('sbadmin') ?>/js/datatables-simple-demo.js"></script>
     <script src="<?= base_url('sbadmin') ?>/js/scripts.js"></script>
 </head>
 
@@ -122,7 +125,7 @@
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="<?= base_url('lokasi/inputLokasi') ?>">Input Lokasi</a>
-                                <a class="nav-link" href="<?= base_url('lokasi/dataLokasi') ?>">Data Lokasi</a>
+                                <a class="nav-link" href="<?= base_url('lokasi/index') ?>">Data Lokasi</a>
                                 <a class="nav-link" href="<?= base_url('lokasi/pemetaanLokasi') ?>">Pemetaan Lokasi</a>
                             </nav>
                         </div>

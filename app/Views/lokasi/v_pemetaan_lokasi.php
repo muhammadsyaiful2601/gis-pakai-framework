@@ -29,14 +29,14 @@
         collapsed: false
     }).addTo(map);
 
-    const gedung = L.icon({
+    const locationIcon = L.icon({
         iconUrl: '<?= base_url('gambar/icon/location.png') ?>',
         iconSize: [45, 45],
     });
 
     <?php foreach ($lokasi as $key => $value) { ?>
         L.marker([<?= $value['latitude'] ?>, <?= $value['longitude'] ?>], {
-                icon: gedung
+                icon: locationIcon
             })
             .bindPopup('<img src="<?= base_url('foto/' . $value['foto_lokasi']) ?>" width="150px"><br>' +
                 '<b><?= $value['nama_lokasi'] ?></b><br>' +
